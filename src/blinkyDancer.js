@@ -5,7 +5,7 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
 makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 
-makeBlinkyDancer.prototype.oldStep = makeDancer.prototype.step;
+// makeBlinkyDancer.prototype.oldStep = makeDancer.prototype.step;
 
 makeBlinkyDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this);
