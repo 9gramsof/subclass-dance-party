@@ -24,19 +24,32 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  /*background-image: url('src/octo.png');
-  width: 10px;*/
   border:10px solid red;
   border-radius:10px;
   position:absolute;
 }
-
-@keyframes swirl {/*
-  from {transform: rotate(0deg)};
-  to {transform: rotate(359deg)};
-}*/
-
-/*#swirlyDancer{
-  background-image: url('src/octo.png');
-  animation: swirl 2s infinite linear;
-}*/
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
+}
+.swirlyDancer{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  animation: rotation 4s infinite linear;
+}
+.blinkyDancer{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+@keyframes changeColor {
+  from {filter: none;}
+  to {filter: invert(86%) sepia(27%) saturate(265%) hue-rotate(293deg) brightness(102%) contrast(96%);}
+}
+.electricDancer{
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  animation: changeColor 2s infinite;
+}
