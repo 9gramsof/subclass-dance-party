@@ -19,3 +19,10 @@ makeDancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
+// add a lineup method to each of the dancer type
+// makeDancer.prototype.lineUp = function(newtop, newleft) {
+// //this would change the position in setPosition
+
+//   makeDancer.prototype.setPosition(newtop, newleft);
+
+// };
